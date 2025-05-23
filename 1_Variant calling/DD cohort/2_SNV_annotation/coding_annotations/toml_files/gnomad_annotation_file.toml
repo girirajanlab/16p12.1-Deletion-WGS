@@ -1,0 +1,11 @@
+[[annotation]]
+file="/path/to/gnomad_genomes/hg19/ancestry_specific_alelle_frequencies.vcf.gz"
+fields = ["AF", "AF_nfe", "AF_nfe_nwe", "AF_nfe_est", "AF_nfe_seu", "AF_nfe_est", "AF_nfe_onf", "AF_fin", "AF_asj", "AF_eas", "AF_amr", "AF_afr", "AF_oth"]
+ops=["self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self"]
+names=["gg_AF", "gg_AF_nfe", "gg_AF_nfe_nwe", "gg_AF_nfe_est", "gg_AF_nfe_seu", "gg_AF_nfe_est", "gg_AF_nfe_onf", "gg_AF_fin", "gg_AF_asj", "gg_AF_eas", "gg_AF_amr", "gg_AF_afr", "gg_AF_oth"]
+
+[[annotation]]
+file="/path/to/gnomad_exomes/hg19/ancestry_specific_allele_frequencies.vcf.gz"
+fields = ["AF", "AF_nfe", "AF_nfe_nwe", "AF_nfe_est", "AF_nfe_seu", "AF_nfe_est", "AF_nfe_onf", "AF_fin", "AF_asj", "AF_eas", "AF_amr",  "AF_afr", "AF_oth"]
+ops=["self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self"]
+names=["ge_AF", "ge_AF_nfe", "ge_AF_nfe_nwe", "ge_AF_nfe_est", "ge_AF_nfe_seu", "ge_AF_nfe_est", "ge_AF_nfe_onf", "ge_AF_fin", "ge_AF_asj", "ge_AF_eas", "ge_AF_amr", "ge_AF_afr", "ge_AF_oth"]

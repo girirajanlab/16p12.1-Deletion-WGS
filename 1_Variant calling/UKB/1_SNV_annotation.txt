@@ -1,0 +1,10 @@
+
+All scripts describing the annotation and parsing of UK Biobank WES variant data are described in this GitHub repository: https://github.com/deeprob/BMI_monogenic
+
+The relevant folders are:
+- src/
+	- genetic_data_processing/
+		- variant_qc/
+		- sample_qc/
+		- variant_annot/
+		- burden_prepration/

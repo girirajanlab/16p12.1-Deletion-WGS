@@ -1,0 +1,93 @@
+This README describes the scripts used for CNV calling and annotation in the DD cohort
+
+# Scripts
+This lists all of the scripts in the directory and subdirectories and a description
+- manta/
+	- _1_run_manta.sh_: Run MANTA on a sample
+	- _2_get_cnvs.py_: Extract deletions and duplications from Manta output
+	- _3_adjacent_filter.py_: Merge adjacent calls if they overlap or have a gap less than 50kb and less than 20% of the combined CNV length
+	- _4_size_filter.py_: Filter CNVs for those > 100bp and <50kb
+	- _5_filter_lowconf_region.sh_: Merge files together and remove calls in low-confidence regions
+	- _6_str_filter.sh_: Filter CNVs to remove those with breakpoints in STR regions
+- delly/
+	- _1_run_delly.sh_: Run delly on a sample
+	- _2_merge_calls.sh_: Merge delly calls from all samples
+	- _3_regenotype.sh_: Regenotype samples using merged calls
+	- _4_merge_regeno.sh_: Merge regenotyped delly calls from all samples
+	- _5_filter.sh_: Filter delly calls and split into individual sample VCFs 
+	- _6_get_cnvs.py_: Extract deletions and duplications from delly output
+	- _7_adjacent_filter.py_: Merge adjacent calls if they overlap or have a gap less than 50kb and less than 20% of the combined CNV length
+	- _8_size_filter.py_: Filter CNVs for those > 100bp and <50kb
+	- _9_filter_lowconf_region.sh_: Merge files together and remove calls in low-confidence regions
+	- _10_str_filter.sh_: Filter CNVs to remove those with breakpoints in STR regions
+- lumpy/
+	- _1_run_lumpy.sh_: Run lumpy on a sample
+	- _2_merge_calls.sh_: Merge lumpy calls from all samples
+	- _3_regenotype.sh_: Regenotype samples using merged calls
+	- _4_paste.sh_: Merge lumpy calls after regenotyping
+	- _5_filter.sh_: Perform QC on lumpy calls and split into individual sample VCFs
+	- _6_get_cnvs.py_: Extract deletions and duplications from delly output
+	- _7_adjacent_filter.py_: Merge adjacent calls if they overlap or have a gap less than 50kb and less than 20% of the combined CNV length
+	- _8_size_filter.py_: Filter CNVs for those > 100bp and <50kb
+	- _9_filter_lowconf_region.sh_: Merge files together and remove calls in low-confidence regions
+	- _10_str_filter.sh_: Filter CNVs to remove those with breakpoints in STR regions
+- cnvnator/
+	- _1_run_cnvnator.sh_: Run CNVnator on a sample and remove any low-quality calls
+	- _2_adjacent_filter.py_: Merge adjacent calls if they overlap or have a gap less than 50kb and less than 20% of the combined CNV length
+	- _3_split_by_size.py_: Separate out CNVs by size and concatenate CNVs across samples
+	- large_cnv_processing/ ==
+		- _4_filter.sh_: Remove calls in low confidence regions and annotate known pathogenic CNVs
+		- _5_str_filter.py_: ilter CNVs to remove those with breakpoints in STR regions and separate deletions and duplications
+		- _6_frequency_annotation.sh_: Annotate CNVs with their frequency in a control population and in the cohort
+		- _7_frequency_filter.py_: Filter CNVs for those with an intracohort frequency <= 10 and, if not known pathogenic CNVs, a frequency in a control population <= 0.001
+		- _8_gnomadSV_annotation.sh_: Annotate CNVs with their frequency in gnomADSV
+		- _9_gnomadSV_filter.py_: Filter CNVs to remove those with a frequency <= 0.001 in gnomADSV, if not known pathogenic CNVs
+		- _10_merge_files.sh_: Combine deletions and duplications into a single file
+		- _11_annotate_gencode.py_: Annotate CNVs with genes they affect
+		- _12_finalize_calls.sh_: Clean up and finalize large CNVnator calls
+		- _13_explode_genes.py_: Explode CNV calls by gene
+	- small_cnv_processing/ ==
+			4_filter_lowconf_region.sh_: emove calls in low-confidence regions
+			5_str_filter.sh_: Filter CNVs to remove those with breakpoints in STR regions
+- small_cnv_merge/
+	- _1_separate_cnvs.sh_: Separate calls from each caller by sample
+	- _2_recip_overlap.sh_: Identify calls from each caller and sample that have 50% reciprocal overlap with calls from other callers and remove calls called by a single caller
+	- _3_merge_calls.py_: Merge calls across callers with 50% reciprocal overlap, keeping the outer breakpoints across all callers
+	- _4_merge_split.py_: Merge calls from all samples and separate deletions and duplications
+	- _5_intracohort_freq_anno.sh_: Annotate calls with intracohort frequency
+	- _6_intracohort_filter.sh_: Filter calls to remove CNVs present in more than 10 individuals
+	- _7_gnomadSV_frequency.sh_: Annotate CNVs with their frequency in gnomADSV
+	- _8_gnomadSV_filter.py_: Filter CNVs to remove those with a frequency <= 0.001 in gnomADSV
+	- _9_merge_files.sh_: Combine deletions and duplications into a single file
+	- _10_annotate_gencode.py_: Annotate CNVs with genes they affect
+	- _11_explode_genes.py_: Explode CNV calls by gene
+- PennCNV/
+	- _1_run_PennCNV.sh_: Run PennCNV to call CNVs from microarray data
+	- _2_parse_penncnv.py_: Merge individual and family CNV calls and parse PennCNV output
+	- _3_merge.py_: Merge adjacent calls if they overlap or have a gap less than 50kb and less than 20% of the combined CNV length and filter calls less than 50kb in length or that encompass less than 5 SNPs
+	- _4_control_frequency.py_: Annotate calls for their frequency in a control cohort
+	- _5_anno_segdup_centel.sh_: Annotate calls for their overlaps with segmental duplications and centromeres and telomeres
+	- _6_intracohort_frequency.py_: Annotate calls with intracohort frequency
+	- _7_gnomad_frequency.py_: Annotate calls with their frequency in gnomAD sv_caller_postprocessing
+	- _8_pathogenic_overlap.sh_: Annotate calls with whether they are in known dosage-sensitive regions
+	- _9_filter_calls.py_: Filter calls to remove those present in more than 10 individuals and with greater than 50% overlap with segmental duplications or cetromeres/telomeres
+	- _10_annotate_gencode.py_: Annotate CNVs with genes they affect
+	- _11_explode_genes.py_: Explode CNV calls by gene
+- merge_all_cnvs/
+	- _1_combine_calls.py_: Combine all CNV calls from PennCNV, CNVnator, and the small cnv pipelines into a single file
+	- _2_annotate_loeuf.py_: Annotate CNV genes with LOEUF score
+
+# Files
+This lists all of the non-script annotation files or helper scripts in the directory and subdirectories and a description.
+- manta/
+	- annotation_files/
+		- _chromosome_bedfile.bed.gz_: A BED file containing the full length of each chromosome
+- delly/
+	- annotation_files/
+		- _delly_exclude.bed_: A BED file containing sites to exclude from delly CNV calling
+- PennCNV/
+	- scripts/
+		- _CalculateSDOverlaps.pl_: A script to identify the overlap of CNVs with segmental duplication regions
+	- annotation_files/
+		- _centromere_telomere.bed_: A BED file of hg19 centromeres and telomeres
+		- _segdups_merge.bed_: A BED file of hg19 segmental duplication sites

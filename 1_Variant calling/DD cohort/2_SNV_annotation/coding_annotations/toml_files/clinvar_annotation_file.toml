@@ -1,0 +1,5 @@
+[[annotation]]
+file="/path/to/clinvar/alelles.vcf"
+fields=["CLNDN", "CLNDISDB","CLNREVSTAT", "CLNSIG", "ALLELEID"]
+ops=["self", "self", "self", "self", "self"]
+names=["ClinVar_CLNDN", "ClinVar_CLNDISDB", "ClinVar_CLNREVSTAT", "ClinVar_CLNSIG", "ClinVar_ALLELEID"]

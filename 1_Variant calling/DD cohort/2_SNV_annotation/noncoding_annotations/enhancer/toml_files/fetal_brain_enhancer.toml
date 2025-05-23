@@ -1,0 +1,5 @@
+[[annotation]]
+file="/path/to/bed/file/with/putative_fetal_brain_enhancers.bed.gz"
+columns = [4]
+ops=["self"]
+names=["fb_enhancer"]
