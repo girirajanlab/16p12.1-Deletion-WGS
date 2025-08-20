@@ -14,18 +14,19 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 # Correlate variant burden and quantitative phenotypes in SSC probands
 
 # Input and output files
-DATA_DIR="/path/to/Searchlight/data/directory/" # Use output directory of 3_Data preparation\Searchlight\1_compile_data.py
+DATA_DIR="/path/to/SSC/data/directory/" # Use the output directory of script 3_Data preparation\SSC\2_compile_data.py
 
-OUTPUT_STATS="/path/to/output/statistics.csv" # Statistics presented in Table S6E
-OUTPUT_HEATMAP="/pathh/to/output/heatmaps.pdf" # Forest plots presented in Fig S6B
+OUTPUT_STATS="/path/to/output/correlation/statistics.csv" # Data presented in Table S6F
+OUTPUT_FIG="/path/to/output/heatmap.pdf" # Figure presented in Fig S7D
 
 # Define variables
-quant_phenos=['Full scale IQ', 'Externalizing behavior (ABCL/CBCL)', 'Internalizing behavior (ABCL/CBCL)', 'Social responsiveness (SRS)', 'Autism behavior (BSI)', 'BMI z-score', 'Head circumference z-score']
-cohorts=['16p11.2 deletion', '16p11.2 duplication']
-vars=['All coding SNVs', 'Missense', 'LOF', 'Splice', 'Genes del.', 'Genes dup.',
-		'Intelligence PRS', 'SCZ PRS', 'Education PRS', 'Autism PRS',
-		'All coding SNVs (LF)', 'Missense (LF)', 'LOF (LF)', 'Splice (LF)', 'Genes del. (LF)', 'Genes dup. (LF)']
+quant_phenos=['Full scale IQ', 'Externalizing behavior (ABCL/CBCL)', 'Internalizing behavior (ABCL/CBCL)', 'Social responsiveness (SRS)', 'Repetitive behavior (RBS-R)', 'Coordination disorder (DCDQ)', 'BMI z-score']
+cohorts=['DBD Tier 1 SNVs', 'Large rare deletions', 'Large rare duplications', 'No primary variant']
+vars=['All coding SNVs', 'Missense', 'LOF', 'Splice', 'Genes del.', 'Genes dup.', 'STRs',
+		'Intelligence PRS', 'SCZ PRS', 'Education PRS',
+		'All coding SNVs (LF)', 'Missense (LF)', 'LOF (LF)', 'Splice (LF)', 'Genes del. (LF)', 'Genes dup. (LF)', 'STRs (LF)']
 
+# Calculate correlations
 statdf=pd.DataFrame()
 for cohort in cohorts:
 	df=pd.read_csv(f'{DATA_DIR}/{cohort}.csv')
@@ -61,7 +62,7 @@ statdf['star']=''
 statdf.loc[statdf['p value']<=0.05, 'star']='*'
 statdf.loc[statdf['BH FDR']<=0.05, 'star']='**'
 
-pdf=PdfPages(OUTPUT_HEATMAP)
+pdf=PdfPages(OUTPUT_FIG)
 for cohort in cohorts:
 	subdf=statdf[statdf.Cohort==cohort]
 	

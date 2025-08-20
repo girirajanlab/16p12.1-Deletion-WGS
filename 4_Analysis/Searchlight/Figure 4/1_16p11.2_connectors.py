@@ -21,7 +21,7 @@ BIOMART_MAP="/path/to/gene/protein/map.txt" # Gene and protein stable IDs were d
 GENE_LIST_DIR="/path/to/proband/gene/list/directory" # Use the output directory of script 3_Data preparation\Searchlight\2_make_genelists.py for 16p11.2 deletion individual proband gene lists
 
 OUTPUT_PATH_DIR="/path/to/output/directory/for/paths/"
-OUTPUT_GML="/path/to/output/file.graphml" # This output file was inmported into Cytoscape to create Fig 4C
+OUTPUT_GML="/path/to/output/file.graphml" # This output file was inmported into Cytoscape to create Fig 4B
 TOP_CONNECTORS="/path/to/top/two/connector/genes.csv" # First and second degree connector genes for 16p11.2 deletion genes
 
 # Load STRING relationships

@@ -7,5 +7,5 @@ This lists all of the scripts in the subdirectories and a description
 - Figure 7/
 	- _1_regressions.py_: Perform linear regressions assessing effects of secondary variants on quantitative phenotypes in 16p11.2 CNV probands
 	- _2_gProfiler.py_: Perform GO and KEGG enrichments on secondary variant genes from 16p11.2 CNV probands
-- Figure S6/
+- Figure S7/
 	- _1_variant_correlations.py_: Calculate Pearson correlations for variant burden and quantitative phenotypes in 16p11.2 CNV probands

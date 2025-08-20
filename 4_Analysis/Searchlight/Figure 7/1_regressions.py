@@ -18,7 +18,7 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 DATA_DIR="/path/to/Searchlight/data/directory/" # Use output directory of 3_Data preparation\Searchlight\1_compile_data.py
 
 OUTPUT_STATS="/path/to/output/statistics.csv" # Statistics presented in Table S6A
-OUTPUT_FOREST="/pathh/to/output/forest/plots.pdf" # Forest plots presented in Fig S6A
+OUTPUT_FOREST="/pathh/to/output/forest/plots.pdf" # Forest plots presented in Fig S7A
 
 # Define variables
 quant_phenos=['Full scale IQ', 'Externalizing behavior (ABCL/CBCL)', 'Internalizing behavior (ABCL/CBCL)', 'Social responsiveness (SRS)', 'Autism behavior (BSI)', 'BMI z-score', 'Head circumference z-score']

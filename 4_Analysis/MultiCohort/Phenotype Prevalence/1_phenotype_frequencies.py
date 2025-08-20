@@ -15,11 +15,11 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 INPUT_FILES=['/path/to/output/DD/cohort/prevalence.csv', # Use the output of script 4_Analysis\DD cohort\Figure 6\3_phenotype_prevalence.py
 				'/path/to/output/SPARK/cohort/prevalence.csv', # Use the output of script 4_Analysis\SPARK\Figure 6\2_phenotype_prevalence.py
 				'/path/to/output/MyCode/cohort/prevalence.csv', # Use the output of script 4_Analysis\MyCode\Figure 6\2_phenotype_prevalence.py
-				'/path/to/output/UKB/cohort/prevalence.csv',
+				'/path/to/output/UKB/cohort/prevalence.csv', # Use the output of script 4_Analysis/UKB/Figure 6/1_phenotype_prevalence.ipynb
 				'/path/to/output/AoU/cohort/prevalence.csv']
 
 OUTPUT_STATS="/path/to/output/statistics.csv" # Output statistics presented in Table S5B
-OUTPUT_FIG="/path/to/output/figure.pdf" # Output figures presenteed in Figs 6A, S5C-D
+OUTPUT_FIG="/path/to/output/figure.pdf" # Output figures presenteed in Figs 6A, S6A-B
 
 # Load data
 df=pd.DataFrame()

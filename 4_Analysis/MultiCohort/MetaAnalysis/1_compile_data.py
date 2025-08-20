@@ -3,13 +3,13 @@ import pandas as pd
 # Compile data for meta analyses
 
 # Input and output files
-UKB_QUESTIONNAIRE="/path/to/UKB/questionnaire/stats.csv"
-DD_ADULT="/path/to/DD/adult/stats.csv" # Use the output of script 4_Analysis\DD cohort\Figure 6\1_adult_associations.py
-UKB_EHR="/path/to/UKB/EHR/stats.csv" 
+UKB_QUESTIONNAIRE="/path/to/UKB/questionnaire/stats.csv" # Use the output of script 4_Analysis/UKB/Figure 6/4_phenotype_variant_associations.ipynb
+DD_ADULT="/path/to/DD/adult/stats.csv" # Use the output of script 4_Analysis/DD cohort/Figure 6/1_adult_associations.py
+UKB_EHR="/path/to/UKB/EHR/stats.csv" # Use the output of script 4_Analysis/UKB/Figure 6/5_icd_variant_associations.ipynb
 AoU="/path/to/AoU/EHR/stats.csv"
-MYCODE="/path/to/MyCode/EHR/stats.csv" # Use the output of 4_Analysis\MyCode\Figure 6\1_phenotype_variant_associations.py
-DD_CHILD="/path/to/DD/child/stats.csv" # Use the output of 4_Analysis\DD cohort\Figure 6\2_child_associations.py
-SPARK="/path/to/SPARK/stats.csv" # Use the output of 4_Analysis\SPARK\Figure 6\1_phenotype_variant_associations.py
+MYCODE="/path/to/MyCode/EHR/stats.csv" # Use the output of 4_Analysis/MyCode/Figure 6/1_phenotype_variant_associations.py
+DD_CHILD="/path/to/DD/child/stats.csv" # Use the output of 4_Analysis/DD cohort/Figure 6/2_child_associations.py
+SPARK="/path/to/SPARK/stats.csv" # Use the output of 4_Analysis/SPARK/Figure 6/1_phenotype_variant_associations.py
 
 QUESTIONNAIRE_STATS="/path/to/output/DD/UKB/stats.csv"
 EHR_STATS="/path/to/output/UKB/MyCode/AoU/stats.csv"

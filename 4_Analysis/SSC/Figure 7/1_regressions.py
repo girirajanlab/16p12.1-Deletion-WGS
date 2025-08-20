@@ -19,7 +19,7 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 DATA_DIR="/paht/to/SSC/data/directory/" # Use the output directory of script 3_Data preparation\SSC\2_compile_data.py
 
 OUTPUT_STATS="/path/to/output/regression/statistics.csv" # Data presented in Table S6A
-OUTPUT_FIG="/path/to/output/forestplot.pdf" # Figure presented in Fig S6C
+OUTPUT_FIG="/path/to/output/forestplot.pdf" # Figure presented in Fig S7C
 
 # Identify variables
 quant_phenos=['Full scale IQ', 'Externalizing behavior (ABCL/CBCL)', 'Internalizing behavior (ABCL/CBCL)', 'Social responsiveness (SRS)', 'Repetitive behavior (RBS-R)', 'Coordination disorder (DCDQ)', 'BMI z-score']

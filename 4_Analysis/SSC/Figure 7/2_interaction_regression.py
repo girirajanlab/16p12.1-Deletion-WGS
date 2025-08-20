@@ -24,7 +24,7 @@ SSC_DATA="/path/to/SSC/while/cohort/data.csv" # Use the output of script 3_Data 
 
 OUTPUT_STATS="/path/to/output/regression/statistics.csv" # Data presented in Table S6B
 OUTPUT_FOREST="/path/to/output/forestplot.pdf" # Figure presented in Fig 7B
-OUTPUT_FAN="/path/to/output/fanplot.pdf" # Figure presented in Fig S6E
+OUTPUT_FAN="/path/to/output/fanplot.pdf" # Figure presented in Fig S7E
 
 # Define variables
 quant_phenos=['Full scale IQ', 'Externalizing behavior (ABCL/CBCL)', 'Internalizing behavior (ABCL/CBCL)', 'Social responsiveness (SRS)', 'Repetitive behavior (RBS-R)', 'Coordination disorder (DCDQ)', 'BMI z-score']

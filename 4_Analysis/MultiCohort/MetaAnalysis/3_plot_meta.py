@@ -15,7 +15,7 @@ DD_UKB='/path/to/DD/UKB/meta.csv' # Use the outputs of script 2_meta_analysis.R
 UKB_MYCODE_AOU='/path/to/UKB/MyCode/AoU/meta.csv'
 DD_SPARK='/path/to/DD/SPARK/meta.csv'
 
-OUTPUT_FIG="/path/to/output/figure.pdf" # Output figures presented in Figs 6G, S5H-I
+OUTPUT_FIG="/path/to/output/figure.pdf" # Output figures presented in Figs 6G, S6H-I
 
 # Parse results
 vars=['All coding SNVs', 'Missense', 'LOF', 'Splice',
