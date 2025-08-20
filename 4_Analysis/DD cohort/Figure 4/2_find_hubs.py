@@ -12,7 +12,7 @@ STRING="/path/to/annotated/string/data.csv.gz" # Use the output of script 2_Anal
 BIOMART_MAP="/path/to/gene/protein/map.txt" # Gene and protein stable IDs were downloaded from BioMart: https://grch37.ensembl.org/biomart/martview/e5b591d25b647e380ce50cd8155adbdb
 GENE_LIST_DIR="/path/to/proband/gene/list/directory" # Use the output of script 3_Data preparation\DD cohort\3_genelist_by_proband.py
 
-OUTPUT_GML_DIR="/path/to/output/GML/directory/" # A directory for output network graphml files per proband. GML files for three probands were plotted in Cytoscape to produce Fig 4E
+OUTPUT_GML_DIR="/path/to/output/GML/directory/" # A directory for output network graphml files per proband. GML files for three probands were plotted in Cytoscape to produce Fig 4D
 OUTPUT_CONNECTORS="/path/to/output/connector/gene/file.csv" # A dataframe containing all connector genes and whether they act as hub genes
 
 # Load STRING relationships

@@ -24,10 +24,10 @@ GMT="/path/to/Human_GOBP_AllPathways_noPFOCR_no_GO_iea_March_01_2025_ensembl.gmt
 
 OUTPUT_PATH_DIR="/path/to/output/directory/for/paths/"
 OUTPUT_GML="/path/to/output/file.graphml" # This output file was inmported into Cytoscape to create Fig 4A
-UPSET_FIG="/path/to/output/upset/plot.pdf" # Upset plot presented in Fig 4B
+UPSET_FIG="/path/to/output/upset/plot.pdf" # Upset plot presented in Fig S4C
 TOP_CONNECTORS="/path/to/top/two/connector/genes.csv" # First and second degree connector genes for 16p12.1 deletion genes as presented in Table S3A
 OUTPUT_GO="/path/to/GO/enrichment/output.csv" # GO enrichment data presented in Table S3C
-OUTPUT_GMT="/path/to/output/GMT/files/" # A directory for GMT files for use in EnrichmentMap in Cytoscape. These files are used to create Fig 4D
+OUTPUT_GMT="/path/to/output/GMT/files/" # A directory for GMT files for use in EnrichmentMap in Cytoscape. These files are used to create Fig 4C
 
 # Load STRING relationships
 string=pd.read_csv(STRING, compression='gzip')

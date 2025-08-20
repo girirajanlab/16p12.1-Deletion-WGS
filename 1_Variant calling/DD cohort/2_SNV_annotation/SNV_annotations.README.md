@@ -17,6 +17,7 @@ This lists all of the scripts in the directory and subdirectories and a descript
 	- _12_intracohort_filter.py_: Apply an intracohort filter such that each variant occurs in <=10 individuals in the cohort
 	- _13_annotate_gencode_genes.py_: Annotate variants with GENCODE genes
 	- _14_loeuf_scores.py_: Annotate variants with LOEUF scores
+	- _15_inheritance_annotations.py_: Annotate variants with inheritance
 - noncoding_annotations/
 	- enhancer/
 		- _3_annotate_fetal_brain_enhancer.sh_: Annotate variants with whether they occur in putative fetal brain active enhancer regions

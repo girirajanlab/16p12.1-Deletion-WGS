@@ -13,4 +13,5 @@ This lists all of the scripts in the directory and subdirectories and a descript
 - _9_filter_annovar.py_: Apply ANNOVAR annotations to calls and restrict calls to exonic
 - _10_annotate_gencode_genes.py_: Annotate variants with GENCODE genes
 - _11_annotate_loeuf.py_: Annotate variants with LOEUF scores
+- _12_inheritance_annotation.py_: Annotate variants with parent-of-origin
 

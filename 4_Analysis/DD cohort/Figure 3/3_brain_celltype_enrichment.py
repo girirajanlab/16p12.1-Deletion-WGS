@@ -18,7 +18,7 @@ GENE_LIST_DIR="/path/to/proband/gene/list/directory" # Use the output of script 
 TABS1A="/path/to/Table_S1A.csv" # Use the output of script 3_Data preparation/DD_cohort/1_make_table_s1a.py
 
 OUTPUT_FIG="/path/to/output/figure.pdf" # This plot will be the forest plot presented in Fig 3C
-OUTPUT_STATS="/paht/to/output/statistics/file.csv" # These are the statistics presented in Table S2D
+OUTPUT_STATS="/paht/to/output/statistics/file.csv" # These are the statistics presented in Table S2F
 
 # Laod data
 expdf=pd.read_csv(CELLTYPE_EXPR)

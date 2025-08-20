@@ -2,7 +2,7 @@ import pandas as pd
 
 # Input and output files
 input_file='/path/to/input/file.csv' # Use the output of script 13_annotate_gencode_genes.py here
-output_file='/path/to/output/table.csv' # Note that the output of this script will be the final coding SNV annotations
+output_file='/path/to/output/table.csv' # Note that the output of this script will be the final coding SNV annotations for most analyses
 loeuf_file='/path/to/parsed/gnomad/loeuf/annotations.csv'
 
 # Load files

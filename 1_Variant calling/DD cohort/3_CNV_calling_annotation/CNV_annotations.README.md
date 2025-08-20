@@ -45,7 +45,9 @@ This lists all of the scripts in the directory and subdirectories and a descript
 		- _10_merge_files.sh_: Combine deletions and duplications into a single file
 		- _11_annotate_gencode.py_: Annotate CNVs with genes they affect
 		- _12_finalize_calls.sh_: Clean up and finalize large CNVnator calls
-		- _13_explode_genes.py_: Explode CNV calls by gene
+		- _13_inheritance_lookup.sh_: Use bedtools to identify CNVs with 50% reciprocal overlap across samples
+		- _14_inhertiance_annotation.py_: Annotate calls with parent of origin based on 50% reciprocal overlap
+		- _15_explode_genes.py_: Explode CNV calls by gene
 	- small_cnv_processing/ ==
 			4_filter_lowconf_region.sh_: emove calls in low-confidence regions
 			5_str_filter.sh_: Filter CNVs to remove those with breakpoints in STR regions
@@ -60,7 +62,9 @@ This lists all of the scripts in the directory and subdirectories and a descript
 	- _8_gnomadSV_filter.py_: Filter CNVs to remove those with a frequency <= 0.001 in gnomADSV
 	- _9_merge_files.sh_: Combine deletions and duplications into a single file
 	- _10_annotate_gencode.py_: Annotate CNVs with genes they affect
-	- _11_explode_genes.py_: Explode CNV calls by gene
+	- _11_inheritance_lookup.sh_: Use bedtools to identify CNVs with 50% reciprocal overlap across samples
+	- _12_inhertiance_annotation.py_: Annotate calls with parent of origin based on 50% reciprocal overlap
+	- _13_explode_genes.py_: Explode CNV calls by gene
 - PennCNV/
 	- _1_run_PennCNV.sh_: Run PennCNV to call CNVs from microarray data
 	- _2_parse_penncnv.py_: Merge individual and family CNV calls and parse PennCNV output
@@ -72,7 +76,9 @@ This lists all of the scripts in the directory and subdirectories and a descript
 	- _8_pathogenic_overlap.sh_: Annotate calls with whether they are in known dosage-sensitive regions
 	- _9_filter_calls.py_: Filter calls to remove those present in more than 10 individuals and with greater than 50% overlap with segmental duplications or cetromeres/telomeres
 	- _10_annotate_gencode.py_: Annotate CNVs with genes they affect
-	- _11_explode_genes.py_: Explode CNV calls by gene
+	- _11_inhertiance_lookup.sh_: Use bedtools to identify CNVs with 50% reciprocal overlap across samples
+	- _12_inhertiance_annotation.py_: Annotate calls with parent of origin based on 50% reciprocal overlap
+	- _13_explode_genes.py_: Explode CNV calls by gene
 - merge_all_cnvs/
 	- _1_combine_calls.py_: Combine all CNV calls from PennCNV, CNVnator, and the small cnv pipelines into a single file
 	- _2_annotate_loeuf.py_: Annotate CNV genes with LOEUF score

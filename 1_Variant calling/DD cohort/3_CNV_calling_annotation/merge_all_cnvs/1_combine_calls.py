@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Input and output files
-CNVNATOR="/path/to/CNVnator/outputs.txt" # Use the output from cnvnator/large_cnv_processing/13_explode_genes.py here
-PENNCNV="/path/to/PennCNV/outputs.txt" # Use the output from PennCNV/11_explode_genes.py here
-SMALL_CNV="/path/to/merged/small/cnv/calls.txt" # Use the output from small_cnv_merge/11_explode_genes.py here
+CNVNATOR="/path/to/CNVnator/outputs.txt" # Use the output from cnvnator/large_cnv_processing/15_explode_genes.py here
+PENNCNV="/path/to/PennCNV/outputs.txt" # Use the output from PennCNV/13_explode_genes.py here
+SMALL_CNV="/path/to/merged/small/cnv/calls.txt" # Use the output from small_cnv_merge/13_explode_genes.py here
 OUTPUT="/path/to/output/file.txt"
 
 # Combine all calls together

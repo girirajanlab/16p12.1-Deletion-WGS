@@ -19,7 +19,7 @@ GENE_ANNO="/path/to/gene/annotations.csv" # Use the output from script 2_Analysi
 GENE_LIST_DIR="/path/to/proband/gene/list/directory" # Use the output of script 3_Data preparation\DD cohort\2_make_genelists.py
 
 OUTPUT_FIG="/path/to/output/figure.pdf" # This plot will be the heatmap presented in Fig 3D
-OUTPUT_STATS="/path/to/output/statistics/file.csv" # These are the statistics presented in Table S2E
+OUTPUT_STATS="/path/to/output/statistics/file.csv" # These are the statistics presented in Table S2G
 
 # Load in WGCNA modules
 modules=pd.read_csv(MODULES)

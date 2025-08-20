@@ -15,9 +15,9 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 
 # Input and Output files
 TABS1A="/path/to/Table_S1A.csv" # Use the output of script 3_Data preparation/DD_cohort/1_make_table_s1a.py
-OUTPUT_BOXPLOT="/path/to/output/boxplot/figure.pdf" # This plot will be the boxplots in the bottom of Fig 3A and Fig S2C
+OUTPUT_BOXPLOT="/path/to/output/boxplot/figure.pdf" # This plot will be the boxplots in the bottom of Fig 3A and Fig S2E
 OUTPUT_HEATMAP="/path/to/output/heatmap/figure.pdf" # This plot will be the heatmap in Fig 3A
-OUTPUT_STATS="/path/to/output/statistics/file.csv" # These are the statistics presented in Table S2C
+OUTPUT_STATS="/path/to/output/statistics/file.csv" # These are the statistics presented in Table S2E
 
 # Load data
 df=pd.read_csv(TABS1A)
