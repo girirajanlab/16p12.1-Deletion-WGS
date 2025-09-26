@@ -50,7 +50,7 @@ This repository contains scripts for calling genetic variants and performing ana
     - Figure S6/
       - _1_variant_correlations.py_: Calculate Pearson correlations for variant burden and quantitative phenotypes in 16p11.2 CNV probands
 
-**Note**:  We note that data from All of Us was analyzed in the [All of Us Researcher Workbench](https://researchallofus.org/data-tools/workbench/). Scripts for All of Us are very similar to those for UK Biobank. We intend to make our AoU workspace a community workspace soon to make the scripts accessible to all registered AoU researchers.
+**Note**:  We note that data from All of Us was analyzed in the [All of Us Researcher Workbench](https://researchallofus.org/data-tools/workbench/). Scripts for All of Us are very similar to those for UK Biobank. Our AoU workspace is available as a Controlled-Tier community workspace titled "Jensen et al 16p12.1 Deletion Analysis". This workspace is available for all approved Controlled-Tier AoU researchers to access our scripts and analyses.
 
 # Acknowledgements
 We thank the participants and investigators in the the DD, MyCode, Simons Searchlight, Simons SSC, Simons SPARK, UK Biobank, and All of US research studies who made this work possible. This research has been conducted using the UK Biobank Resource under Application Number 45023 and All of Us Controlled Tier Dataset v8. We also thank the National Institutes of Health’s All of Us Research Program for making available the participant data examined in this study.
