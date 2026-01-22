@@ -1,6 +1,6 @@
 # 16p12.1-Deletion-WGS
 Scripts for:
-Jensen, M., Smolen, C., Tyryshkina, A., Pizzo, L., Banerjee, D., Oetjens, M., Shimelis, H., Taylor, C. M., Pounraja, V. K., Song, H., Rohan, L., Huber, E., El Khattabi, L., van de Laar, I., Tadros, R., Bezzina, C., van Slegtenhorst, M., Kammeraad, J., Prontera, P., … Girirajan, S. (2024). Genetic modifiers and ascertainment drive variable expressivity of complex disorders. _medRxiv: The Preprint Server for Health Sciences_, 2024.08.27.24312158. https://doi.org/10.1101/2024.08.27.24312158
+Jensen, M., Smolen, C., Tyryshkina, A., Pizzo, L., Sun, J., Noss, S., Banerjee, D., Oetjens, M., Shimelis, H., Taylor, C. M., Pounraja, V. K., Song, H., Rohan, L., Huber, E., El Khattabi, L., van de Laar, I., Tadros, R., Bezzina, C. R., van Slegtenhorst, M., … Girirajan, S. (2025). Genetic modifiers and ascertainment drive variable expressivity of complex disorders. _Cell_, 188(25), 7065-7082.e17. [https://doi.org/10.1016/j.cell.2025.09.012](https://doi.org/10.1016/j.cell.2025.09.012)
 
 # Repository Organization
 This repository contains scripts for calling genetic variants and performing analyses in the above manuscript. Files are organized into four main directories, each with additional READMEs. There are too many scripts to detail here, so all scripts will be detailed in the READMEs within each subdirectory. Some examples will be shown here. The four main directories are:
